@@ -1,0 +1,19 @@
+{{- /* A full experience or course entry. */ -}}
+<article class="entry{{ with .outcome }} entry-exit{{ end }}" id="{{ .company | anchorize }}">
+  <header class="entry-meta">
+    <h3 class="entry-company">{{ with .url }}<a href="{{ . }}" rel="noopener">{{ end }}{{ partial "breakable.html" .company }}{{ with .url }}</a>{{ end }}</h3>
+    <p class="entry-role">{{ .title }}</p>
+    <p class="entry-dates">{{ replace .dates " - " "–" }}</p>
+    {{- with .outcome }}
+    <p class="entry-outcome">{{ .verb | replaceRE "^(has been|was) " "" | strings.FirstUpper }} {{ .party }}{{ with .year }}, {{ . }}{{ end }}</p>
+    {{- end }}
+  </header>
+  <div class="entry-body">
+    {{- with .details }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{- with .items }}
+    <ul>
+      {{- range . }}{{ with .details }}<li>{{ . | markdownify }}</li>{{ end }}{{ end }}
+    </ul>
+    {{- end }}
+  </div>
+</article>

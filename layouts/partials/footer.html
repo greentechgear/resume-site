@@ -1,0 +1,15 @@
+{{- $p := site.Params -}}
+<footer class="colophon">
+  {{- if $p.social.enable }}
+  <ul class="social">
+    {{- range $p.social.list }}
+    <li><span>{{ .label }}</span> <a href="{{ .url }}" rel="me noopener">{{ .title }}</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+  <p class="disclaimer">{{ i18n "disclaimer" }}</p>
+  <p class="signed">
+    <span class="signature">{{ $p.profile.name }}</span>
+    <span>{{ with $p.contact.location }}{{ . }}, {{ end }}{{ now.Format "January 2006" }}</span>
+  </p>
+</footer>

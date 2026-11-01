@@ -1,0 +1,54 @@
+{{- $p := site.Params -}}
+<aside class="facts" aria-label="Background">
+  {{- if $p.education.enable }}
+  <section>
+    <h2 class="facts-h">{{ i18n "education" }}</h2>
+    {{- range $p.education.list }}
+    <p class="fact"><strong>{{ .degree }}, {{ .university }}</strong><span>{{ .dates }}</span></p>
+    {{- end }}
+  </section>
+  {{- end }}
+  {{- if $p.awards.enable }}
+  <section>
+    <h2 class="facts-h">{{ i18n "awards" }}</h2>
+    {{- range $p.awards.list }}
+    <p class="fact"><strong>{{ .name }}</strong><span>{{ .body }}, {{ .date }}</span></p>
+    {{- end }}
+  </section>
+  {{- end }}
+  {{- if $p.skills.enable }}
+  <section>
+    <h2 class="facts-h">{{ i18n "skills" }}</h2>
+    <ul class="fact-list">
+      {{- range $p.skills.list }}
+      <li>{{ .title }}{{ with .items }}<ul>{{ range . }}<li>{{ .details | markdownify }}</li>{{ end }}</ul>{{ end }}</li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- if $p.languages.enable }}
+  <section>
+    <h2 class="facts-h">{{ i18n "languages" }}</h2>
+    <dl class="fact-table">
+      {{- range $p.languages.list }}
+      <div><dt>{{ .name }}</dt><dd>{{ .level }}</dd></div>
+      {{- end }}
+    </dl>
+  </section>
+  {{- end }}
+  {{- if $p.interests.enable }}
+  <section>
+    <h2 class="facts-h">{{ i18n "interests" }}</h2>
+    <p class="fact-run">{{ range $i, $e := $p.interests.list }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}{{ $e.name }}{{ end }}</p>
+  </section>
+  {{- end }}
+  {{- if $p.information.enable }}
+  {{- range $p.information.list }}
+  <section>
+    <h2 class="facts-h">{{ .title }}</h2>
+    {{- with .details }}<p class="fact-run">{{ . | markdownify }}</p>{{ end }}
+    {{- with .items }}<ul class="fact-list">{{ range . }}<li>{{ .details | markdownify }}</li>{{ end }}</ul>{{ end }}
+  </section>
+  {{- end }}
+  {{- end }}
+</aside>

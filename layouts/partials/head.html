@@ -1,0 +1,27 @@
+{{- $p := site.Params -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.Title }}</title>
+<meta name="description" content="{{ $p.description }}">
+<meta name="author" content="{{ $p.author }}">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#eef0f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121416" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{ site.BaseURL }}">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{ site.Title }}">
+<meta property="og:description" content="{{ $p.description }}">
+<meta property="og:url" content="{{ site.BaseURL }}">
+<meta property="og:image" content="{{ $p.og_image | absURL }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{ $p.twitterName }}">
+
+{{- /* Apply a saved theme choice before first paint so the page never flashes. */}}
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+
+<link rel="preload" href="{{ "fonts/bodoni-moda.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/source-serif-4.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">

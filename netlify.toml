@@ -1,0 +1,7 @@
+# Deploys come from GitHub Actions (.github/workflows/deploy.yml), which builds
+# the site and renders the PDFs before uploading public/. Netlify itself does
+# not build; turn off "Build & deploy" auto publishing from git in the Netlify
+# UI so it never publishes a build without PDFs.
+[build]
+  publish = "public/"
+  command = "echo 'Built in GitHub Actions'"

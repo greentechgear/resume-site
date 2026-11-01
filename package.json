@@ -1,0 +1,12 @@
+{
+  "name": "resume",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "hugo --minify --gc",
+    "pdf": "node scripts/pdf.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

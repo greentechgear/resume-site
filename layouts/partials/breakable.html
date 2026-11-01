@@ -1,0 +1,2 @@
+{{- /* Lets a long domain name wrap before its suffix rather than mid-word. */ -}}
+{{- replaceRE `\.(com|net|org|io)$` `<wbr>.$1` (. | htmlEscape) | safeHTML -}}

@@ -1,0 +1,44 @@
+{{- $p := site.Params -}}
+<header class="masthead">
+  <div class="folio">
+    <span>{{ with $p.profile.tagline }}{{ . }}{{ end }}</span>
+    <span class="folio-end">
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z"/></svg>
+        <span>{{ i18n "theme" }}</span>
+      </button>
+    </span>
+  </div>
+
+  <div class="masthead-main">
+    <div class="ident">
+      <h1 class="name">{{ $p.profile.name }}</h1>
+      {{- if $p.summary.enable }}
+      <p class="standfirst">{{ $p.summary.text | markdownify }}</p>
+      {{- end }}
+      <p class="dateline">{{ with $p.contact.location }}{{ . }}<span aria-hidden="true"> · </span>{{ end }}<time datetime="{{ now.Format "2006-01-02" }}">{{ i18n "updated" }} {{ now.Format "January 2, 2006" }}</time></p>
+    </div>
+
+    {{- with $p.profile.avatar }}
+    <img class="portrait" src="{{ . | relURL }}" width="322" height="430" alt="Portrait of {{ $p.profile.name }}">
+    {{- end }}
+
+    <div class="desk">
+      {{- if $p.contact.enable }}
+      <dl class="contact">
+        {{- range $p.contact.list }}
+        <div>
+          <dt>{{ .label }}</dt>
+          <dd>{{ with .url }}<a href="{{ . | safeURL }}">{{ end }}{{ .text }}{{ with .url }}</a>{{ end }}</dd>
+        </div>
+        {{- end }}
+      </dl>
+      {{- end }}
+      <div class="pdf" role="group" aria-label="{{ i18n "download" }}">
+        <span class="pdf-label">{{ i18n "download" }}</span>
+        <a href="{{ $p.pdfLetter | relURL }}" download>{{ i18n "letter" }}</a>
+        <a href="{{ $p.pdfA4 | relURL }}" download>{{ i18n "a4" }}</a>
+      </div>
+    </div>
+  </div>
+</header>

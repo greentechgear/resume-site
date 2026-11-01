@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}">
+  <head>
+    {{- partial "head.html" . }}
+  </head>
+  <body>
+    <a class="skip" href="#experience">{{ i18n "skip" }}</a>
+    {{- block "main" . }}{{ end }}
+    {{- $js := resources.Get "js/theme.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  </body>
+</html>

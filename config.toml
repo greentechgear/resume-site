@@ -1,0 +1,282 @@
+# Every word on the resume comes from this file. Edit, push to main, and the
+# site and both PDFs rebuild. Any section can be hidden with enable = false.
+
+baseURL = "https://resume.brianchappell.com/"
+locale = "en-US"
+title = "Brian Chappell, Full Stack Marketer and Product Developer"
+disableKinds = ["taxonomy", "term", "section", "RSS", "sitemap"]
+
+[params]
+    author = "Brian Chappell"
+    description = "Founder, full stack marketer and product developer in Raleigh, NC. Ventures, exits, and experience."
+    og_image = "images/brian-chappell.jpg"
+    twitterName = "@brianchappell"
+
+    # Shown as the PDF download links. The files are generated on deploy.
+    pdfLetter = "resume.letter.pdf"
+    pdfA4 = "resume.a4.pdf"
+
+    [params.profile]
+        enable = true
+        name = "Brian Chappell"
+        tagline = "Professional Experience"
+        avatar = "images/brian-chappell.jpg"
+
+    [params.contact]
+        enable = true
+        location = "Raleigh, NC, USA"
+
+        [[params.contact.list]]
+        label = "Phone"
+        text = "See email"
+        [[params.contact.list]]
+        label = "Email"
+        url = "mailto:brianc@brianchappell.com"
+        text = "brianc@brianchappell.com"
+        [[params.contact.list]]
+        label = "Blog"
+        url = "https://brianchappell.com"
+        text = "brianchappell.com"
+
+    [params.summary]
+        enable = true
+        text = "Full Stack Marketer and Product Developer."
+
+    # Experience. Entries with an `outcome` are completed transactions and are
+    # set as the large tombstones at the top of the page. `url` links the
+    # company name.
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Community Founder"
+        dates = "2025 - Present"
+        company = "Consultdex.com"
+        url = "https://consultdex.com/"
+        details = "Founded and building an intimate consultant community platform featuring specialized categories for critiques, business ideas, software guides, and professional development. Created a space for consultants to share knowledge, analyze campaigns, and collaborate on innovative projects."
+        [[params.experience.list.items]]
+        details = "Built comprehensive community platform with categories: Consult & Critique, Steal This Idea, Software Guides, Mind & Business, and AMA sessions"
+        [[params.experience.list.items]]
+        details = "Facilitated knowledge sharing across web performance, content quality, accessibility, data analytics, branding, and paid media"
+        [[params.experience.list.items]]
+        details = "Created space for consultants to share innovative business ideas and software mastery guides"
+
+        [[params.experience.list]]
+        title = "Product Developer"
+        dates = "2025 - Present"
+        company = "Calenlist.com"
+        url = "https://calenlist.com/"
+        details = "Developed a calendar sharing and monetization platform that allows creators, coaches, and community leaders to share their calendars and build revenue through subscription models. Built with Google Calendar integration and simple monetization features."
+        [[params.experience.list.items]]
+        details = "Created platform for calendar sharing and community building with Google Calendar integration"
+        [[params.experience.list.items]]
+        details = "Implemented subscription-based monetization model for calendar creators and community leaders"
+        [[params.experience.list.items]]
+        details = "Built templates for Office Hours, Community Events, Webinar Series, Consulting Sessions, Fitness Classes, and Workshop Series"
+
+        [[params.experience.list]]
+        title = "Founder"
+        dates = "2024 - Present"
+        company = "Medvertise"
+        details = "Transform Medical Equipment Sales with the Medvertise Network. Medvertise simplifies the way you find, price, and sell equipment, saving you time and increasing your margins. Built by experts in the medical equipment industry from the team that created the world's largest medical imaging aftermarket company, Probo Medical."
+        [[params.experience.list.items]]
+        details = "AI-powered platform for medical equipment sales with real-time market insights and pricing data"
+        [[params.experience.list.items]]
+        details = "Average time saved: 8+ hours/week, Margin increase: +23% on average"
+        [[params.experience.list.items]]
+        details = "Exclusive access to both aftermarket pricing and new OEM products"
+        [[params.experience.list.items]]
+        details = "Auto-updated listings synchronized across all major platforms (Google, Bing, etc.)"
+        [[params.experience.list.items]]
+        details = "AI Chatbot assistance and integrated platform listings for 5x faster management"
+
+        [[params.experience.list]]
+        title = "Founder"
+        dates = "2023 - Present"
+        company = "Rival Track Inc."
+        url = "https://rivaltrack.com/"
+        details = "Rival Track is run day to day by Brian Chappell and serves as his mode for competitive insights and informative takes on web competition and other marketing and communication tactics your competitors might be engaging in."
+        [[params.experience.list.items]]
+        details = "Competitive Monitoring as a service"
+
+        [[params.experience.list]]
+        title = "Founder"
+        dates = "2019 - Present"
+        company = "Promote Device"
+        url = "https://promotedevice.com"
+        details = "Promote Device specializes in building a strategic marketing presence tailored to individual businesses within the industrial and healthcare verticals. Specialties include search engine optimization (SEO), Google Ads, Google Merchant Center, Google Retail, Bing Adcenter, Amazon Business, as well as general Content Management and Lead Management Customer Service."
+        [[params.experience.list.items]]
+        details = "Lead Generation Company for Industrial and Healthcare Companies"
+        [[params.experience.list.items]]
+        details = "Located in RTP NC Area"
+
+        [[params.experience.list]]
+        title = "Founder"
+        dates = "2016 - Present"
+        company = "PromoteMed Inc."
+        details = "PromoteMed focuses on growing patient bases for Aesthetic practices through to Veterinarians and everything in between. We utilize integrated digital marketing techniques to drive success for our healthcare partners."
+        [[params.experience.list.items]]
+        details = "Digital Marketing Agency for the Healthcare Industry"
+        [[params.experience.list.items]]
+        details = "Located in Cary, NC"
+
+        [[params.experience.list]]
+        title = "Owner / Lead Strategist"
+        dates = "2008 - 2022"
+        company = "AdaptMarketing.com"
+        details = "Managed and led digital marketing agency for over 10 years and 50+ clients. Managed team of 12. Acquired by CopyPress in 2022."
+        outcome = { verb = "has been acquired by", party = "CopyPress", year = "2022" }
+        [[params.experience.list.items]]
+        details = "Developed link and content promotion tools."
+
+        [[params.experience.list]]
+        title = "Director of Marketing"
+        dates = "2005 - 2008"
+        company = "GoTickets.com"
+        details = "Competitive secondary ticket broker competing against the largest ticket brokers in the USA. Topping out at #3 in 2008. Acquired by Pfingsten Partners."
+        outcome = { verb = "has been acquired by", party = "Pfingsten Partners" }
+        [[params.experience.list.items]]
+        details = "Created initial link system to monitor link efforts as part of GoTickets.com"
+
+        [[params.experience.list]]
+        title = "Medical Equipment Business Development"
+        dates = "2008 - 2019"
+        company = "Providian Medical"
+        details = "Led business development initiatives in the medical imaging equipment market, contributing to significant market consolidation and company growth."
+        outcome = { verb = "was sold for", party = "6x EBITA" }
+        [[params.experience.list.items]]
+        details = "Sold for 6x EBITA"
+        [[params.experience.list.items]]
+        details = "Created an online lead generation system extending across the market that generated quotes on $100 million in ultrasound equipment"
+        [[params.experience.list.items]]
+        details = "Assisted the transition and consolidation of the imaging market, which in turn created a $500 million entity in Probo Medical"
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "BullionMax"
+        meta = "Financial"
+        url = "https://bullionmax.com"
+        tagline = "Managed the Inventory / Content / Search for a Gold/Silver dealer launch"
+
+        [[params.projects.list]]
+        title = "BitIRA"
+        meta = "Financial"
+        url = "https://bitira.com"
+        tagline = "Cryptocurrency IRA investment product"
+
+        [[params.projects.list]]
+        title = "Promote Device"
+        meta = "Healthcare"
+        url = "https://promotedevice.com"
+        tagline = "Healthcare lead generation company"
+
+        [[params.projects.list]]
+        title = "Buildium"
+        meta = "SaaS"
+        url = "https://buildium.com"
+        tagline = "Property management software"
+
+        [[params.projects.list]]
+        title = "Raven Tools"
+        meta = "SaaS"
+        url = "https://raventools.com"
+        tagline = "SEO tools"
+
+        [[params.projects.list]]
+        title = "Ignite Social Media"
+        meta = "Services"
+        url = "https://ignitesocialmedia.com"
+        tagline = "Social media agency"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "B2B"
+        [[params.skills.list]]
+        title = "SaaS"
+        [[params.skills.list]]
+        title = "Ecommerce"
+        [[params.skills.list]]
+        title = "Search Marketing"
+        [[params.skills.list]]
+        title = "WordPress, Google Analytics, Google Ads, Bing & LinkedIn Ads"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "BS"
+        university = "Virginia Tech"
+        dates = "2000-2005 (yes, the Michael Vick era)"
+
+    [params.awards]
+        enable = true
+
+        [[params.awards.list]]
+        name = "Professional Business Seller™ I"
+        body = "AdaptPartners.com"
+        date = "2016"
+
+        [[params.awards.list]]
+        name = "Professional Business Seller™ II"
+        body = "AdaptMarketing.com"
+        date = "2022"
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Chappellisms"
+        level = "Fluent"
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Fluent"
+
+        [[params.languages.list]]
+        name = "Marketing-Dev speak"
+        level = "Fluent"
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Horses"
+        [[params.interests.list]]
+        name = "Costa Rica"
+        [[params.interests.list]]
+        name = "Fungi"
+        [[params.interests.list]]
+        name = "Bugs"
+        [[params.interests.list]]
+        name = "Trees"
+
+    # Optional sections, hidden for now. Courses read like experience entries;
+    # talks read like projects; information is a titled list of short lines.
+    [params.courses]
+        enable = false
+
+    [params.talks]
+        enable = false
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = "Interests"
+        details = "horses, costa rica, fungi, bugs, trees, 3d printing, linux, automations"
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        label = "Consultdex"
+        url = "https://consultdex.com/profile/brian-chappell/"
+        title = "/brian-chappell"
+        [[params.social.list]]
+        label = "Mastodon"
+        url = "https://mas.to/@brianchappell"
+        title = "@brianchappell"

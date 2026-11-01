@@ -1,0 +1,4 @@
+<section class="entries" aria-labelledby="courses-h">
+  <h2 id="courses-h" class="section-h">{{ i18n "courses" }}</h2>
+  {{- range site.Params.courses.list }}{{ partial "entry.html" . }}{{ end }}
+</section>

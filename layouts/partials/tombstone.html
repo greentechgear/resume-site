@@ -1,0 +1,15 @@
+{{- /* One boxed notice. Context: an experience entry. */ -}}
+{{- $exit := isset . "outcome" -}}
+<a class="ts{{ if $exit }} ts-exit{{ end }}" href="#{{ .company | anchorize }}">
+  <span class="ts-company">{{ partial "breakable.html" .company }}</span>
+  {{- with .outcome }}
+  <span class="ts-verb">{{ .verb }}</span>
+  <span class="ts-party">{{ .party }}</span>
+  {{- with .year }}<span class="ts-year">{{ . }}</span>{{ end }}
+  {{- end }}
+  <span class="ts-sign">
+    <span class="ts-who">{{ site.Params.profile.name }}</span>
+    <span class="ts-role">{{ .title }}</span>
+    <span class="ts-dates">{{ replace .dates " - " "–" }}</span>
+  </span>
+</a>

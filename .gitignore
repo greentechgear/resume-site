@@ -1,0 +1,12 @@
+/public/
+/resources/_gen/
+/node_modules/
+.hugo_build.lock
+.netlify/
+.DS_Store
+.env
+# Impeccable working files (reviews, mocks); briefs and config are kept.
+/.impeccable/review/
+/.impeccable/mocks/
+/.impeccable/build/
+/.impeccable/hook.cache.json

@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T14:34:04+00:00",
+  "title": "Design System: Brian Chappell, Resume",
+  "extensions": {
+    "colorMeta": {
+      "ledger-navy": {
+        "role": "primary",
+        "displayName": "Ledger Navy",
+        "canonical": "#12385e",
+        "tonalRamp": [
+          "#000b1e",
+          "#002449",
+          "#1c4168",
+          "#3a6089",
+          "#5980ab",
+          "#7aa2cf",
+          "#9ec8f7",
+          "#d8f1ff"
+        ],
+        "oklch": "oklch(33.5% 0.080 251)",
+        "printValue": "#000",
+        "cssVar": "--navy"
+      },
+      "deal-gold": {
+        "role": "secondary",
+        "displayName": "Deal Gold",
+        "canonical": "#b48a1f",
+        "tonalRamp": [
+          "#190600",
+          "#3e1900",
+          "#5d3700",
+          "#7d5600",
+          "#9f7600",
+          "#c29732",
+          "#e9be5c",
+          "#ffebb5"
+        ],
+        "oklch": "oklch(65.6% 0.125 85)",
+        "printValue": "#a37b14",
+        "cssVar": "--gold"
+      },
+      "deal-gold-ink": {
+        "role": "secondary",
+        "displayName": "Deal Gold Ink",
+        "canonical": "#7a5b0c",
+        "tonalRamp": [
+          "#160700",
+          "#391d00",
+          "#573a00",
+          "#775806",
+          "#987832",
+          "#bb9955",
+          "#e2bf7a",
+          "#ffecc3"
+        ],
+        "oklch": "oklch(49.0% 0.096 84)",
+        "printValue": "#6e520a",
+        "cssVar": "--gold-ink"
+      },
+      "gold-highlight": {
+        "role": "tertiary",
+        "displayName": "Gold Highlight",
+        "canonical": "#e2cf8f",
+        "tonalRamp": [
+          "#120a00",
+          "#322100",
+          "#4f3e00",
+          "#6e5c1b",
+          "#8e7c3e",
+          "#b09e5f",
+          "#d6c484",
+          "#faefc9"
+        ],
+        "oklch": "oklch(85.5% 0.085 94)",
+        "cssVar": "--select"
+      },
+      "newsprint": {
+        "role": "neutral",
+        "displayName": "Newsprint",
+        "canonical": "#eef0f0",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#232424",
+          "#3e4040",
+          "#5c5e5e",
+          "#7c7e7e",
+          "#9d9f9f",
+          "#c2c4c4",
+          "#edefef"
+        ],
+        "oklch": "oklch(95.4% 0.002 197)",
+        "printValue": "#fff",
+        "cssVar": "--paper"
+      },
+      "newsprint-shade": {
+        "role": "neutral",
+        "displayName": "Newsprint Shade",
+        "canonical": "#e4e7e8",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#232424",
+          "#3e4040",
+          "#5c5e5e",
+          "#7c7e7e",
+          "#9d9f9f",
+          "#c2c4c4",
+          "#edefef"
+        ],
+        "oklch": "oklch(95.4% 0.002 197)",
+        "cssVar": "--paper-2"
+      },
+      "press-ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "#131516",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#222425",
+          "#3e4041",
+          "#5b5e5f",
+          "#7b7e7f",
+          "#9c9fa0",
+          "#c2c4c6",
+          "#edeff0"
+        ],
+        "oklch": "oklch(19.4% 0.004 229)",
+        "printValue": "#000",
+        "cssVar": "--ink"
+      },
+      "ink-grey": {
+        "role": "neutral",
+        "displayName": "Ink Grey",
+        "canonical": "#474b4e",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#212527",
+          "#3c4043",
+          "#5a5e61",
+          "#797e81",
+          "#9a9fa2",
+          "#c0c5c8",
+          "#eceff1"
+        ],
+        "oklch": "oklch(41.0% 0.007 240)",
+        "printValue": "#3c3c3a",
+        "cssVar": "--ink-2"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#c0c5c7",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#212526",
+          "#3c4042",
+          "#5a5e60",
+          "#797e80",
+          "#9a9fa1",
+          "#c0c5c7",
+          "#eceff0"
+        ],
+        "oklch": "oklch(82.0% 0.006 223)",
+        "printValue": "#b9b9b2",
+        "cssVar": "--hair"
+      },
+      "night-sheet": {
+        "role": "neutral",
+        "displayName": "Night Sheet",
+        "canonical": "#121416",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#232424",
+          "#3e4040",
+          "#5c5e5e",
+          "#7c7e7e",
+          "#9d9f9f",
+          "#c2c4c4",
+          "#edefef"
+        ],
+        "oklch": "oklch(95.4% 0.002 197)",
+        "mode": "dark",
+        "cssVar": "--paper"
+      },
+      "night-sheet-shade": {
+        "role": "neutral",
+        "displayName": "Night Sheet Shade",
+        "canonical": "#1b1e21",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#232424",
+          "#3e4040",
+          "#5c5e5e",
+          "#7c7e7e",
+          "#9d9f9f",
+          "#c2c4c4",
+          "#edefef"
+        ],
+        "oklch": "oklch(95.4% 0.002 197)",
+        "mode": "dark",
+        "cssVar": "--paper-2"
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#ebeae4",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#222425",
+          "#3e4041",
+          "#5b5e5f",
+          "#7b7e7f",
+          "#9c9fa0",
+          "#c2c4c6",
+          "#edeff0"
+        ],
+        "oklch": "oklch(19.4% 0.004 229)",
+        "mode": "dark",
+        "cssVar": "--ink"
+      },
+      "night-ink-grey": {
+        "role": "neutral",
+        "displayName": "Night Ink Grey",
+        "canonical": "#a8a7a0",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#212527",
+          "#3c4043",
+          "#5a5e61",
+          "#797e81",
+          "#9a9fa2",
+          "#c0c5c8",
+          "#eceff1"
+        ],
+        "oklch": "oklch(41.0% 0.007 240)",
+        "mode": "dark",
+        "cssVar": "--ink-2"
+      },
+      "night-hairline": {
+        "role": "neutral",
+        "displayName": "Night Hairline",
+        "canonical": "#393c40",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#212526",
+          "#3c4042",
+          "#5a5e60",
+          "#797e80",
+          "#9a9fa1",
+          "#c0c5c7",
+          "#eceff0"
+        ],
+        "oklch": "oklch(82.0% 0.006 223)",
+        "mode": "dark",
+        "cssVar": "--hair"
+      },
+      "night-navy": {
+        "role": "primary",
+        "displayName": "Night Navy",
+        "canonical": "#9cc1ea",
+        "tonalRamp": [
+          "#000b1e",
+          "#002449",
+          "#1c4168",
+          "#3a6089",
+          "#5980ab",
+          "#7aa2cf",
+          "#9ec8f7",
+          "#d8f1ff"
+        ],
+        "oklch": "oklch(33.5% 0.080 251)",
+        "mode": "dark",
+        "cssVar": "--navy"
+      },
+      "night-gold": {
+        "role": "secondary",
+        "displayName": "Night Gold",
+        "canonical": "#d2aa45",
+        "tonalRamp": [
+          "#190600",
+          "#3e1900",
+          "#5d3700",
+          "#7d5600",
+          "#9f7600",
+          "#c29732",
+          "#e9be5c",
+          "#ffebb5"
+        ],
+        "oklch": "oklch(65.6% 0.125 85)",
+        "mode": "dark",
+        "cssVar": "--gold"
+      },
+      "night-gold-ink": {
+        "role": "secondary",
+        "displayName": "Night Gold Ink",
+        "canonical": "#dcb75a",
+        "tonalRamp": [
+          "#160700",
+          "#391d00",
+          "#573a00",
+          "#775806",
+          "#987832",
+          "#bb9955",
+          "#e2bf7a",
+          "#ffecc3"
+        ],
+        "oklch": "oklch(49.0% 0.096 84)",
+        "mode": "dark",
+        "cssVar": "--gold-ink"
+      },
+      "night-highlight": {
+        "role": "tertiary",
+        "displayName": "Night Highlight",
+        "canonical": "#5a4813",
+        "tonalRamp": [
+          "#120a00",
+          "#322100",
+          "#4f3e00",
+          "#6e5c1b",
+          "#8e7c3e",
+          "#b09e5f",
+          "#d6c484",
+          "#faefc9"
+        ],
+        "oklch": "oklch(85.5% 0.085 94)",
+        "mode": "dark",
+        "cssVar": "--select"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the masthead only. Uppercase. 38pt in print."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Counterparty on an exit tombstone. Uppercase, lining figures. 1.375rem on ink tombstones."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Company names in tombstones, entries, listing rows; the colophon signature. Uppercase, 1.0625 to 1.25rem."
+      },
+      "standfirst": {
+        "displayName": "Standfirst",
+        "purpose": "Italic one-line summary under the name, max 34ch, ink grey."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Entry prose and bullets, 42rem measure; 1rem under 36rem; 9.5pt/1.38 in print."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tracked uppercase Franklin: section heads, folio, dateline, dates, listing meta."
+      },
+      "label-small": {
+        "displayName": "Label Small",
+        "purpose": "Contact keys, PDF label, fact-sheet heads, tombstone byline. Uppercase."
+      }
+    },
+    "shadows": [],
+    "rules": [
+      {
+        "name": "heavy-double",
+        "value": "border-top: 5px solid ink; second 1px ink line 3px below",
+        "purpose": "Opens the masthead and colophon."
+      },
+      {
+        "name": "heavy",
+        "value": "5px solid ink",
+        "purpose": "Opens the fact sheet band."
+      },
+      {
+        "name": "gold",
+        "value": "2px solid deal-gold",
+        "purpose": "Exit frames and the outcome rule."
+      },
+      {
+        "name": "frame",
+        "value": "1px solid ink",
+        "purpose": "Notice frames, button borders, masthead close, table top."
+      },
+      {
+        "name": "hairline",
+        "value": "1px solid hairline",
+        "purpose": "Row and entry dividers."
+      },
+      {
+        "name": "leader",
+        "value": "1px dotted hairline",
+        "purpose": "Fact-table leaders."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Expo-out easing for every transition."
+      },
+      {
+        "name": "state",
+        "value": "0.2s",
+        "purpose": "Button and toggle fills and borders."
+      },
+      {
+        "name": "notice",
+        "value": "0.25s",
+        "purpose": "Tombstone fill and inset-frame step."
+      },
+      {
+        "name": "press",
+        "value": "scaleX(0 to 1) from left, 0.9s",
+        "purpose": "Masthead heavy rule draws across on load; only under prefers-reduced-motion: no-preference; content never hidden."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "68rem"
+      },
+      {
+        "name": "medium",
+        "value": "56rem"
+      },
+      {
+        "name": "narrow",
+        "value": "36rem"
+      },
+      {
+        "name": "print",
+        "value": "@page margin 13mm 12mm 14mm; Letter and A4"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "PDF Download Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Square ink-ruled box that inverts on hover; set two-up for Letter and A4.",
+      "html": "<div class=\"ds-pdf\"><a class=\"ds-btn-outline\" href=\"#\">US Letter</a><a class=\"ds-btn-outline\" href=\"#\">A4</a></div>",
+      "css": ":host{--paper:#eef0f0;--paper-2:#e4e7e8;--ink:#131516;--ink-2:#474b4e;--hair:#c0c5c7;--navy:#12385e;--gold:#b48a1f;--gold-ink:#7a5b0c;--display:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;--label:'Libre Franklin','Franklin Gothic','Helvetica Neue',Arial,sans-serif;--text:'Source Serif 4',Georgia,'Times New Roman',serif;--ease:cubic-bezier(0.16,1,0.3,1);} .ds-pdf{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;max-width:19rem;background:var(--paper);padding:1rem;} .ds-btn-outline{display:block;padding:0.65rem 0.5rem;border:1px solid var(--ink);border-radius:0;text-align:center;text-decoration:none;color:var(--ink);font:600 0.8125rem var(--label);letter-spacing:0.08em;text-transform:uppercase;transition:background-color 0.2s var(--ease),color 0.2s var(--ease);} .ds-btn-outline:hover{background:var(--ink);color:var(--paper);} .ds-btn-outline:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}"
+    },
+    {
+      "name": "Theme Toggle",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Label-voice toggle with a half-filled circle; inverts to ink when pressed.",
+      "html": "<button class=\"ds-toggle\" type=\"button\" aria-pressed=\"false\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><circle cx=\"8\" cy=\"8\" r=\"6.25\"/><path d=\"M8 1.75a6.25 6.25 0 0 1 0 12.5z\"/></svg><span>Dark mode</span></button> <button class=\"ds-toggle\" type=\"button\" aria-pressed=\"true\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><circle cx=\"8\" cy=\"8\" r=\"6.25\"/><path d=\"M8 1.75a6.25 6.25 0 0 1 0 12.5z\"/></svg><span>Dark mode</span></button>",
+      "css": ":host{--paper:#eef0f0;--paper-2:#e4e7e8;--ink:#131516;--ink-2:#474b4e;--hair:#c0c5c7;--navy:#12385e;--gold:#b48a1f;--gold-ink:#7a5b0c;--display:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;--label:'Libre Franklin','Franklin Gothic','Helvetica Neue',Arial,sans-serif;--text:'Source Serif 4',Georgia,'Times New Roman',serif;--ease:cubic-bezier(0.16,1,0.3,1);} .ds-toggle{display:inline-flex;align-items:center;gap:0.45rem;padding:0.3rem 0.6rem;border:1px solid var(--hair);border-radius:0;background:transparent;color:var(--ink);font:600 0.75rem var(--label);letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;transition:border-color 0.2s var(--ease),background-color 0.2s var(--ease);} .ds-toggle:hover{border-color:var(--ink);} .ds-toggle:focus-visible{outline:2px solid var(--navy);outline-offset:3px;} .ds-toggle svg{width:0.9rem;height:0.9rem;fill:none;stroke:currentColor;stroke-width:1.5;} .ds-toggle path{fill:currentColor;stroke:none;} .ds-toggle[aria-pressed=\"true\"]{background:var(--ink);color:var(--paper);border-color:var(--ink);}"
+    },
+    {
+      "name": "Tombstone, Ink",
+      "kind": "card",
+      "refersTo": "tombstone",
+      "description": "Current-venture deal notice: ink border plus inset outline, centered, links to its entry.",
+      "html": "<a class=\"ds-ts\" href=\"#\"><span class=\"ds-ts-company\">Consultdex.com</span><span class=\"ds-ts-sign\"><span class=\"ds-ts-who\">Brian Chappell</span><span class=\"ds-ts-role\">Community Founder</span><span class=\"ds-ts-dates\">2025–Present</span></span></a>",
+      "css": ":host{--paper:#eef0f0;--paper-2:#e4e7e8;--ink:#131516;--ink-2:#474b4e;--hair:#c0c5c7;--navy:#12385e;--gold:#b48a1f;--gold-ink:#7a5b0c;--display:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;--label:'Libre Franklin','Franklin Gothic','Helvetica Neue',Arial,sans-serif;--text:'Source Serif 4',Georgia,'Times New Roman',serif;--ease:cubic-bezier(0.16,1,0.3,1);} .ds-ts{display:flex;flex-direction:column;align-items:center;gap:0.35rem;width:18.5rem;padding:1.25rem 1rem 1rem;border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:-5px;text-align:center;text-decoration:none;color:var(--ink);background:var(--paper);font-family:var(--text);transition:background-color 0.25s var(--ease),outline-offset 0.25s var(--ease);} .ds-ts:hover{background:var(--paper-2);outline-offset:-7px;} .ds-ts:focus-visible{outline:2px solid var(--navy);outline-offset:3px;} .ds-ts-company{font:600 1.1875rem/1.15 var(--display);letter-spacing:0.05em;text-transform:uppercase;} .ds-ts-sign{display:grid;gap:0.1rem;margin-top:0.5rem;padding-top:0.75rem;width:100%;border-top:1px solid var(--hair);} .ds-ts-who{font:600 0.6875rem var(--label);letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-2);} .ds-ts-role{font-size:0.9375rem;line-height:1.3;} .ds-ts-dates{font:0.75rem var(--label);color:var(--ink-2);font-variant-numeric:tabular-nums;}"
+    },
+    {
+      "name": "Tombstone, Exit",
+      "kind": "custom",
+      "refersTo": "tombstone-exit",
+      "description": "Completed-transaction notice, double-ruled in deal gold with verb, counterparty, and year.",
+      "html": "<a class=\"ds-tx\" href=\"#\"><span class=\"ds-tx-company\">AdaptMarketing.com</span><span class=\"ds-tx-verb\">has been acquired by</span><span class=\"ds-tx-party\">CopyPress</span><span class=\"ds-tx-year\">2022</span><span class=\"ds-tx-sign\"><span class=\"ds-tx-who\">Brian Chappell</span><span class=\"ds-tx-role\">Owner / Lead Strategist</span><span class=\"ds-tx-dates\">2008–2022</span></span></a>",
+      "css": ":host{--paper:#eef0f0;--paper-2:#e4e7e8;--ink:#131516;--ink-2:#474b4e;--hair:#c0c5c7;--navy:#12385e;--gold:#b48a1f;--gold-ink:#7a5b0c;--display:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;--label:'Libre Franklin','Franklin Gothic','Helvetica Neue',Arial,sans-serif;--text:'Source Serif 4',Georgia,'Times New Roman',serif;--ease:cubic-bezier(0.16,1,0.3,1);} .ds-tx{display:flex;flex-direction:column;align-items:center;gap:0.5rem;width:20rem;padding:2rem 1.5rem 1.25rem;border:2px solid var(--gold);outline:1px solid var(--gold);outline-offset:-8px;text-align:center;text-decoration:none;color:var(--ink);background:var(--paper);font-family:var(--text);transition:background-color 0.25s var(--ease),outline-offset 0.25s var(--ease);} .ds-tx:hover{background:var(--paper-2);outline-offset:-10px;} .ds-tx:focus-visible{outline:2px solid var(--navy);outline-offset:3px;} .ds-tx-company{font:600 1.5rem/1.15 var(--display);letter-spacing:0.03em;text-transform:uppercase;} .ds-tx-verb{font-style:italic;font-size:0.9375rem;color:var(--ink-2);} .ds-tx-party{font:600 2.125rem/1.15 var(--display);letter-spacing:0.04em;text-transform:uppercase;font-variant-numeric:lining-nums;} .ds-tx-year{font:1rem var(--display);font-variant-numeric:lining-nums tabular-nums;} .ds-tx-sign{display:grid;gap:0.1rem;padding-top:0.75rem;width:100%;border-top:1px solid var(--gold);} .ds-tx-who{font:600 0.6875rem var(--label);letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-2);} .ds-tx-role{font-size:0.9375rem;line-height:1.3;} .ds-tx-dates{font:0.75rem var(--label);color:var(--ink-2);font-variant-numeric:tabular-nums;}"
+    },
+    {
+      "name": "Section Head",
+      "kind": "custom",
+      "refersTo": "section-head",
+      "description": "Label-voice heading with a navy hairline running to the edge.",
+      "html": "<h2 class=\"ds-section-h\">Completed transactions</h2>",
+      "css": ":host{--paper:#eef0f0;--paper-2:#e4e7e8;--ink:#131516;--ink-2:#474b4e;--hair:#c0c5c7;--navy:#12385e;--gold:#b48a1f;--gold-ink:#7a5b0c;--display:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;--label:'Libre Franklin','Franklin Gothic','Helvetica Neue',Arial,sans-serif;--text:'Source Serif 4',Georgia,'Times New Roman',serif;--ease:cubic-bezier(0.16,1,0.3,1);} .ds-section-h{display:flex;align-items:center;gap:1rem;margin:0;color:var(--ink);font:600 0.75rem var(--label);letter-spacing:0.12em;text-transform:uppercase;} .ds-section-h::after{content:'';flex:1;border-top:1px solid var(--navy);}"
+    },
+    {
+      "name": "Masthead Double Rule",
+      "kind": "custom",
+      "description": "The heavy-over-hairline rule that opens the masthead and colophon, with the display name beneath.",
+      "html": "<div class=\"ds-mast\"><h1 class=\"ds-name\">Brian Chappell</h1><p class=\"ds-standfirst\">Full Stack Marketer and Product Developer.</p></div>",
+      "css": ":host{--paper:#eef0f0;--paper-2:#e4e7e8;--ink:#131516;--ink-2:#474b4e;--hair:#c0c5c7;--navy:#12385e;--gold:#b48a1f;--gold-ink:#7a5b0c;--display:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;--label:'Libre Franklin','Franklin Gothic','Helvetica Neue',Arial,sans-serif;--text:'Source Serif 4',Georgia,'Times New Roman',serif;--ease:cubic-bezier(0.16,1,0.3,1);} .ds-mast{position:relative;padding:2rem 0 1.5rem;border-top:5px solid var(--ink);border-bottom:1px solid var(--ink);background:var(--paper);} .ds-mast::before{content:'';position:absolute;left:0;right:0;top:3px;border-top:1px solid var(--ink);} .ds-name{margin:0;font:800 4rem/0.92 var(--display);letter-spacing:-0.01em;text-transform:uppercase;color:var(--ink);} .ds-standfirst{margin:1rem 0 0;max-width:34ch;font:italic 1.35rem/1.35 var(--text);color:var(--ink-2);}"
+    },
+    {
+      "name": "Contact Row",
+      "kind": "list",
+      "description": "Definition-list row: small label key, serif value, hairline beneath; links in navy.",
+      "html": "<dl class=\"ds-contact\"><div><dt>Email</dt><dd><a href=\"#\">brianc@brianchappell.com</a></dd></div><div><dt>Blog</dt><dd><a href=\"#\">brianchappell.com</a></dd></div></dl>",
+      "css": ":host{--paper:#eef0f0;--paper-2:#e4e7e8;--ink:#131516;--ink-2:#474b4e;--hair:#c0c5c7;--navy:#12385e;--gold:#b48a1f;--gold-ink:#7a5b0c;--display:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;--label:'Libre Franklin','Franklin Gothic','Helvetica Neue',Arial,sans-serif;--text:'Source Serif 4',Georgia,'Times New Roman',serif;--ease:cubic-bezier(0.16,1,0.3,1);} .ds-contact{display:grid;gap:0.4rem;margin:0;max-width:19rem;font-family:var(--text);} .ds-contact div{display:grid;grid-template-columns:4.5rem 1fr;align-items:baseline;gap:0.75rem;padding-bottom:0.4rem;border-bottom:1px solid var(--hair);} .ds-contact dt{font:600 0.6875rem var(--label);letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-2);} .ds-contact dd{margin:0;font-size:1rem;} .ds-contact a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:0.18em;} .ds-contact a:hover{text-decoration-thickness:2px;} .ds-contact a:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Matter of Record",
+    "overview": "The page is a financial-press sheet. Every venture is printed as a deal tombstone, the boxed, centered announcement a bank runs after a transaction closes: company in Bodoni capitals, an italic verb (\"has been acquired by\"), the counterparty large, the year, then a signature block under a hairline. Completed exits are the larger notices, double-ruled in deal gold; current ventures are smaller ink-ruled notices beside them. The tombstone grid doubles as the table of contents, each notice linking to its full entry below.\n\nEverything else is newspaper furniture. A heavy-over-hairline double rule opens the masthead and the colophon; tracked Franklin capitals carry every label, date, and running head; a calm Source Serif column carries the reading. There is no shadow, no radius, no tint panel. Depth and grouping come only from rules: heavy, hairline, double, dotted. Density is a broadsheet's, not an app's: generous outer margins, tight internal leading in labels, and a 42rem reading measure.\n\nDark mode is the same sheet inverted under ink, not a second palette: paper goes to near-black, ink to a warm off-white, navy and gold lift in lightness to hold contrast. Print and PDF are first-class renderings of the same stylesheet, forced to white paper and pure black ink, with gold kept for exits.",
+    "keyCharacteristics": [
+      "Cool newsprint ground, ink-black type, one navy for rules and links, gold only for completed deals.",
+      "Bodoni Moda capitals for names of things; Libre Franklin tracked capitals for labels; Source Serif 4 for reading.",
+      "Square corners everywhere (0px); structure drawn entirely with rules.",
+      "Centered tombstone notices with an inset second frame (outline offset inward).",
+      "Tabular and lining figures for every date and year.",
+      "One motion: the masthead's heavy rule draws across on load."
+    ],
+    "rules": [
+      {
+        "name": "The Gold Is Earned Rule",
+        "body": "Deal gold marks a completed transaction and nothing else: exit tombstones, the outcome rule under an exited entry, and the gold underline that marks an entry arrived at from its tombstone. A current venture never gets gold, however proud.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Working Accent Rule",
+        "body": "Navy is the only interactive color. Links, section rules, and focus rings share it; no second link color, no colored buttons.",
+        "section": "colors"
+      },
+      {
+        "name": "The Same Sheet Rule",
+        "body": "Dark mode and print are remappings of the same nine roles, not new designs. Add a role to all three (light, dark, print) or not at all.",
+        "section": "colors"
+      },
+      {
+        "name": "The Capitals Have Jobs Rule",
+        "body": "Bodoni capitals name an organization or person; Franklin capitals label a field. Never set sentences in either, and never swap them.",
+        "section": "typography"
+      },
+      {
+        "name": "The Figures Line Up Rule",
+        "body": "Every date, year, and range uses tabular lining figures and an en dash (\"2008–2022\").",
+        "section": "typography"
+      },
+      {
+        "name": "The Rules Not Shadows Rule",
+        "body": "If two things need separating, draw a rule between them. Weight encodes rank: 5px opens a major region, 2px marks gold or emphasis, 1px frames, hairline divides.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Engraved Frame Rule",
+        "body": "State changes move the inner frame, not the surface: on hover a tombstone's inset outline steps 2px further in and the fill shifts one shade. Nothing lifts.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep every corner square and every separation a rule, ranked by weight (5px, 2px, 1px, hairline).",
+      "**Do** reserve deal gold for completed transactions; use `deal-gold-ink` when gold must be read as text.",
+      "**Do** set organization and person names in Bodoni capitals and field labels in tracked Franklin capitals (600, +0.12em).",
+      "**Do** use tabular lining figures and en dashes for every date range.",
+      "**Do** define every new color role for light, dark, and print together.",
+      "**Do** keep motion to state transitions on the expo-out ease (`cubic-bezier(0.16, 1, 0.3, 1)`, 0.2 to 0.25s) and the single masthead rule draw, all gated by reduced-motion."
+    ],
+    "donts": [
+      "**Don't** add box shadows, rounded corners, gradients, or tinted card panels; the world has none.",
+      "**Don't** use gold on current ventures, generic emphasis, or buttons.",
+      "**Don't** introduce a second link or accent color beside navy.",
+      "**Don't** set body sentences in Bodoni or Franklin, or run the reading column past 42rem.",
+      "**Don't** colorize the portrait; it is a grayscale halftone in a matted ink frame."
+    ]
+  }
+}

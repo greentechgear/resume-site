@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{- $p := site.Params }}
+{{- partial "masthead.html" . }}
+<main class="sheet">
+  {{- if $p.experience.enable }}{{ partial "record.html" . }}{{ end }}
+  <div class="body">
+    {{- partial "facts.html" . }}
+    <div class="body-main">
+      {{- if $p.experience.enable }}{{ partial "experience.html" . }}{{ end }}
+      {{- if $p.courses.enable }}{{ partial "courses.html" . }}{{ end }}
+      {{- if $p.projects.enable }}{{ partial "projects.html" . }}{{ end }}
+      {{- if $p.talks.enable }}{{ partial "talks.html" . }}{{ end }}
+    </div>
+  </div>
+</main>
+{{- partial "footer.html" . }}
+{{ end }}
